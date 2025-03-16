@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navya's Bakery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div id="navbar">
+            <a id="logo">Navya's Bakery</a>
+            <a href="#">About Us</a>
+            <a href="#">Products</a>
+            <a href="#">Contact Us</a>
+            <input placeholder="Search Navya's Bakery.in">
+            <button id="search">Search</button>
+            <button id="online">Order Online</button>   
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- Image with Tagline -->
+        <div id="image-section">
+            <div class="tagline">"Baking Happiness, One Bite at a Time!"</div>
+        </div>
+
+        <!-- Menu Panel -->
+        <div id="menu-card">
+            <h2>Our Specials</h2>
+            <div class="menu-item">
+                <img src="https://www.lifeloveandsugar.com/wp-content/uploads/2014/08/Best-Moist-Chocolate-Cake1-1.jpg" alt="Chocolate Cake">
+                <p>Rich Chocolate Cake - ₹350</p>
+            </div>
+            <div class="menu-item">
+                <img src="https://th.bing.com/th/id/OIP.epGtRo5o0MB6dSwPABbiRgHaHa?w=208&h=208" alt="Strawberry Delight">
+                <p>Strawberry Delight - ₹400</p>
+            </div>
+            <div class="menu-item">
+                <img src="https://th.bing.com/th/id/OIP.2FSrsVRdz-1gXy0T2sT-BwHaHa?w=208&h=208&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Vanilla Cupcake">
+                <p>Vanilla Cupcake - ₹250</p>
+            </div>
+            <div class="menu-item">
+                <img src="https://th.bing.com/th/id/OIP.q_yMTN3NPbskEk-BB4jTWQHaHa?w=208&h=208" alt="Blueberry Cheesecake">
+                <p>Blueberry Cheesecake - ₹500</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Customer Reviews Section -->
+    <div id="testimonials">
+        <h2>What Our Customers Say</h2>
+        <p class="review" class="Bake">"The best bakery in town! Their cakes are to die for!" - ⭐⭐⭐⭐⭐</p>
+        <p class="review" class="Bake">"Absolutely love their cookies! Fresh and delicious!" - ⭐⭐⭐⭐⭐</p>
+    </div>
+
+    <!-- Floating Back to Top Button -->
+    <button id="back-to-top">↑</button>
+
+    <footer>
+        Made with &#10084; Navya's Bakery
+        <br>
+        &#128140; - navya.bakers55gmail.com
+        <br>
+        &#9400; [Navya's Bakery]. No copyright infringement intended
+    </footer>
+
+    <script>
+        // Show/hide back-to-top button
+        window.onscroll = function() {
+            let button = document.getElementById("back-to-top");
+            if (document.documentElement.scrollTop > 200) {
+                button.style.display = "block";
+            } else {
+                button.style.display = "none";
+            }
+        };
+
+        // Scroll to top smoothly
+        document.getElementById("back-to-top").onclick = function() {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        };
+    </script>
+
+</body>
+</html>
